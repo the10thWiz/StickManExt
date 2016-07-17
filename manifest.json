@@ -1,0 +1,35 @@
+{
+
+
+	"description": "Adds a stickfigure",
+	"manifest_version": 2,
+	"name": "StickMan",
+	"version": "1.0",
+	"icons": {
+		"48": "icons/StickMan-48.png"
+	},
+	"applications": {
+    "gecko": {
+      "id": "extention@stick.man",
+      "strict_min_version": "45.0"
+    }
+
+  },
+	"permissions": [
+
+		"activeTab"
+	],
+	"background": {
+
+		"scripts": ["StickManUpdate.js"]
+
+	},
+	"browser_action": {
+
+		"default_icon": {
+			"48": "icons/StickManButton.png"
+		},
+		"default_title": "Call StickMan",
+	},
+
+}
