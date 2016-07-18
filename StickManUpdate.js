@@ -1,6 +1,6 @@
 browser.browserAction.onClicked.addListener(function() {
 	browserAction.getTitle(function(t) {
-		if(t) === 'Call StickMan') {
+		if(t === 'Call StickMan') {
 			chrome.tabs.executeScript(null, {
 				file: "/content_scripts/stickman.js"
 			});
