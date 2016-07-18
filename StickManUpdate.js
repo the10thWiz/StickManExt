@@ -5,9 +5,9 @@ browser.browserAction.onClicked.addListener(function() {
 		});
 		browserAction.setTitle('Recall StickMan');
 	}else {
-		browser.tabs.sendMessage(
-			message: "End";
-		);
+		browser.tabs.sendMessage({
+			message: "End"
+		});
 		browserAction.setTitle('Call StickMan');
 	}
 });
