@@ -4,12 +4,12 @@ browser.browserAction.onClicked.addListener(function() {
 			browser.tabs.executeScript(null, {
 				file: "/content_scripts/stickman.js"
 			});
-			browser.browserAction.setTitle('Recall StickMan');
+			browser.browserAction.setTitle({title:'Recall StickMan'});
 		}else {
 			browser.tabs.sendMessage({
 				message: "End"
 			});
-			browser.browserAction.setTitle('Call StickMan');
+			browser.browserAction.setTitle({title:'Call StickMan'});
 		}
 	})
 });
